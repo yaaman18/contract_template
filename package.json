@@ -1,0 +1,8 @@
+{
+  "name": "contract_template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "yaaman18 <gucchiyama8551@hotmail.co.jp>",
+  "license": "MIT",
+  "private": true
+}
