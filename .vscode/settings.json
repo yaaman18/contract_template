@@ -12,6 +12,9 @@
     "source.organizeImports": true,
     "source.fixAll.eslint": true
   },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
   "eslint.workingDirectories": [{ "mode": "auto" }],
   "[solidity]": {
     "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
@@ -19,5 +22,12 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": ["daisyui"]
+  "cSpell.words": [
+    "APIKEY",
+    "daisyui",
+    "inputatom",
+    "lofi",
+    "sendgrid",
+    "tyeps"
+  ]
 }
