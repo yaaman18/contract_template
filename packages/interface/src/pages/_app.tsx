@@ -1,10 +1,16 @@
 import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit'
 import '@rainbow-me/rainbowkit/styles.css'
+import { DefaultSeo } from 'next-seo'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 import { configureChains, createClient, WagmiConfig } from 'wagmi'
 import { mainnet, polygon } from 'wagmi/chains'
 import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public'
+
+import SEO from '../../next-seo.config'
+import { Layout } from '../components/layout'
+
 import '../styles/globals.css'
 
 if (!process.env.NEXT_PUBLIC_ALCHEMY_KEY) {
@@ -30,9 +36,13 @@ const wagmiClient = createClient({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
-        <Component {...pageProps} />
-      </RainbowKitProvider>
+      <Head>children={undefined}</Head>
+      <DefaultSeo {...SEO} />
+      <Layout>
+        <RainbowKitProvider chains={chains}>
+          <Component {...pageProps} />
+        </RainbowKitProvider>
+      </Layout>
     </WagmiConfig>
   )
 }
