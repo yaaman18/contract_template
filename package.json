@@ -10,6 +10,9 @@
     "contract:lint": "yarn workspace contract lint",
     "contract:compile": "yarn workspace contract compile",
     "contract:test": "yarn workspace contract test",
+    "contract:upgrade": "yarn workspace contract upgrade -latest",
+    "contract:node": "yarn workspace contract hardhat node",
+    "contract:deploy_localhost": "yarn workspace contract hardhat run scripts/deploy.ts --network localhost",
     "interface:lint": "yarn workspace interface lint",
     "interface:dev": "yarn workspace interface dev"
   },
