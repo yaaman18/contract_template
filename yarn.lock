@@ -1730,6 +1730,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/mocha@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "@types/mocha@npm:10.0.1"
+  checksum: 224ea9fce7b1734ccdb9aa99a622d902a538ce1847bca7fd22c5fb38adcf3ed536f50f48f587085db988a4bb3c2eb68f4b98e1cd6a38bc5547bd3bbbedc54495
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:*, @types/node@npm:18.11.17":
   version: 18.11.17
   resolution: "@types/node@npm:18.11.17"
@@ -3887,6 +3894,7 @@ __metadata:
     "@openzeppelin/contracts-upgradeable": ^4.8.0
     "@typechain/ethers-v5": ^10.2.0
     "@typechain/hardhat": ^6.1.5
+    "@types/mocha": ^10.0.1
     chai: ^4.3.7
     ethers: ^5.7.2
     hardhat: ^2.12.4
